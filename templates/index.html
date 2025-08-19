@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Código Morse e Alfabeto N</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Alfabeto N</h1>
+        <div class="section">
+            <h2>Codificar para Alfabeto N</h2>
+            <input type="text" id="text-input" placeholder="Digite o texto (ex: HELLO)">
+            <button onclick="encodeAN()">Codificar para AN</button>
+            <div class="result-container">
+                <p id="encode-AN-result" class="message"></p>
+                <button class="copy-btn" onclick="copyText('encode-AN-result')">Copiar</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Decodificar de Alfabeto N</h2>
+            <input type="text" id="AN-input" placeholder="Digite o Alfabeto N (ex: ¢ * ) ) $)">
+            <button onclick="decodeAN()">Decodificar AN</button>
+            <div class="result-container">
+                <p id="decode-AN-result" class="message"></p>
+                <button class="copy-btn" onclick="copyText('decode-AN-result')">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
