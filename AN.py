@@ -15,11 +15,11 @@ def traduzir_to_AN(text):
     AN = []
     for char in text:
         char = char.replace('Á', 'A').replace('À', 'A').replace('Ã', 'A').replace('Â', 'A').replace('Ä', 'A') \
-           .replace('É', 'E').replace('È', 'E').replace('Ê', 'E').replace('Ë', 'E') \
-           .replace('Í', 'I').replace('Ì', 'I').replace('Î', 'I').replace('Ï', 'I') \
-           .replace('Ó', 'O').replace('Ò', 'O').replace('Õ', 'O').replace('Ô', 'O').replace('Ö', 'O') \
-           .replace('Ú', 'U').replace('Ù', 'U').replace('Û', 'U').replace('Ü', 'U') \
-           .replace('Ç', 'C').replace('Ñ', 'N')
+            .replace('É', 'E').replace('È', 'E').replace('Ê', 'E').replace('Ë', 'E') \
+            .replace('Í', 'I').replace('Ì', 'I').replace('Î', 'I').replace('Ï', 'I') \
+            .replace('Ó', 'O').replace('Ò', 'O').replace('Õ', 'O').replace('Ô', 'O').replace('Ö', 'O') \
+            .replace('Ú', 'U').replace('Ù', 'U').replace('Û', 'U').replace('Ü', 'U') \
+            .replace('Ç', 'C').replace('Ñ', 'N')
         if char in alfabetoN:
             AN.append(alfabetoN[char])
         else:
